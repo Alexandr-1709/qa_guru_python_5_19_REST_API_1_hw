@@ -8,7 +8,7 @@ packages = [{include = "qa_guru_python_5_19_rest_api_1_hw"}]
 
 [tool.poetry.dependencies]
 python = ">=3.10"
-selene = "2.0.0.rc2"
+requests = "2.31.0"
 pytest = ">=7.3.1"
 
 
