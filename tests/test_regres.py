@@ -48,7 +48,7 @@ def test_update_user():
     id_user = test_create_user()
     payload = {"name": "Aleksandr",
                "job": "AutomationQA"}
-    response = requests.put(url=BASE_URL, json=payload)
+    response = requests.put(url=BASE_URL + 'api/users/' + id_user, json=payload)
 
     assert response.status_code == 200
     assert response.json()['name'] == 'Aleksandr'
